@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/quantityText"
+            android:layout_width="135dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="Quantity  "
+            android:visibility="invisible"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            >
+        </TextView>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/Risk"
+        android:text="1000"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="40dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Risk Per Trade">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/riskEntry"
+        android:inputType="numberDecimal"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:textSize="17sp"
+        android:hint="Change the Risk price"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+    </EditText>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:id="@+id/fiveHund"
+            android:onClick="btn1"
+            android:text="500">
+        </Button>
+
+        <Button
+            android:id="@+id/oneThou"
+            android:text="1000"
+            android:onClick="btn2"
+            android:layout_marginLeft="10dp">
+        </Button>
+
+        <Button
+            android:id="@+id/oneFive"
+            android:text="1500"
+            android:onClick="btn3"
+            android:layout_marginLeft="10dp">
+        </Button>
+
+        <Button
+            android:id="@+id/twoThos"
+            android:onClick="btn4"
+            android:text="2000">
+        </Button>
+
+        <Button
+            android:id="@+id/twoFive"
+            android:text="2500"
+            android:onClick="btn5"
+            android:layout_marginLeft="10dp">
+        </Button>
+
+        <Button
+            android:id="@+id/three"
+            android:text="3000"
+            android:onClick="btn6"
+            android:layout_marginLeft="10dp">
+        </Button>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/entry"
+            android:inputType="numberDecimal"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:hint="Entry Price"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/sl"
+            android:inputType="numberDecimal"
+            android:hint="Stop Loss Price"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reset"
+            android:text="Reset"
+            android:textSize="15sp"
+            android:onClick="reset">
+        </Button>
+
+        <Button
+            android:id="@+id/cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            android:textSize="15sp"
+            android:onClick="QuaCalculate"
+            android:layout_marginLeft="10dp">
+        </Button>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

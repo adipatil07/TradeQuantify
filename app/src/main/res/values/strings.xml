@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TradeQuantify</string>
+    <string name="calculate">Calculate</string>
+    <string name="tradequantify">TradeQuantify</string>
+</resources>
