@@ -2,6 +2,7 @@ package com.example.tradequantify;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -122,6 +123,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void target(View view){
+        Intent i = new Intent(MainActivity.this, target.class);
+        i.putExtra("Entry", String.valueOf(entryPrice)); // Convert to string
+        i.putExtra("Stop", String.valueOf(stopPrice));   // Convert to string
+        i.putExtra("Quantity", String.valueOf(quantityPrice)); // Convert to string
+        startActivity(i);
+    }
     public void reset(View view){
         riskEntry.setText("");
         entry.setText("");

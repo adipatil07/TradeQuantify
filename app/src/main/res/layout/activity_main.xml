@@ -6,23 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center_horizontal">
 
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="30dp"
         android:gravity="center">
 
         <TextView
             android:id="@+id/quantityText"
-            android:layout_width="135dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:text="Quantity  "
             android:visibility="invisible"
-            android:textSize="28sp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:gravity="center"
             >
@@ -30,7 +31,7 @@
 
         <TextView
             android:id="@+id/quantity"
-            android:layout_width="50dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:textStyle="bold"
             android:textSize="28sp"
@@ -172,8 +173,15 @@
         </Button>
     </LinearLayout>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/targetbtn"
+        android:text="Target"
+        android:onClick="target"
+        >
 
 
-
+    </Button>
 
 </LinearLayout>
